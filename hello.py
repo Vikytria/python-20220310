@@ -80,4 +80,4 @@ print(f"A {name} emberke {age} eves")  # string interpolation
 print(f"A 3 + 56 kifejezés értéke: {3 + 56}")  # string interpolation
 
 print("Hello GitHUb!")
-
+print("Hello again!")
