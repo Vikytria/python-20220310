@@ -72,11 +72,12 @@ print(name, age, "éves", sep="****")   # sep: a megdott változok között mily
 print(name + " " + str(age) + " éves")
 
 print("Hello" + "World")
-fruit1 = "alma"
+fruit1 = "meggy"
 fruit2 = "körte"
 print(fruit1 + fruit2)
 
 print(f"A {name} emberke {age} eves")  # string interpolation
-print(f"A 3 + 5 kifejezés értéke: {3 + 5}")  # string interpolation
+print(f"A 3 + 56 kifejezés értéke: {3 + 56}")  # string interpolation
 
+print("Hello GitHUb!")
 
