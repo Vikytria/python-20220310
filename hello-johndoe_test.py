@@ -18,13 +18,9 @@ def greetings(driver):
     hello_text = driver.find_element(By.ID, "message_p").text
     return hello_text
 
-driver = open_page()
-given_name(driver, "John Doe")
-hello_text = greetings(driver)
-
-print(hello_text)
-
-assert hello_text == "Hello John Doe!"
-
-
-
+def test_sayhello():
+    driver = open_page()
+    given_name(driver, "John Doe")
+    hello_text = greetings(driver)
+    print(hello_text)
+    assert hello_text == "Hello John Doe!"
