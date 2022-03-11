@@ -1,8 +1,7 @@
-
-print("Gondolj egy számra 1 és 10 között!")
-
 min = 1
-max = 10
+max = 100
+
+print(f"""Gondolj egy számra {min} és {max} között!""")
 
 answer = "x"
 prevguess = -1
@@ -28,3 +27,5 @@ while answer!= "e":
             print(f"""{guess}-ra gondoltál""")
         else: 
             print("Ez nem jó válasz!")
+
+# HF: Hanyadikra találta el? 
