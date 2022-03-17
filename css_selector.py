@@ -7,3 +7,12 @@
 # CSS selector
 # Tag name
 # XPath
+
+# Elem vizsgálat >keresés // attribute selectors
+
+
+[attri] -> az összes ilyen nevű attributomot kilistázza
+[attri ~= value ] > ha az attributomok közt szerepel a megadott value akkor kilistázza
+[attri |= 'value'] visszaadja azokat amike value értékkel kezdődnek
+^= értékkel kezdődik
+$= értékkel végződik
