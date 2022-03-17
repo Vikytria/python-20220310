@@ -8,6 +8,5 @@ driver.get("https://python.org")
 driver.find_element(By.ID, "id-search-field").send_keys("Visual Studio Code")
 driver.find_element(By.ID, "submit").click()
 
-
 print("END")
 

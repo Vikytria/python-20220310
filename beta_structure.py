@@ -2,6 +2,8 @@
     # Egyszerű - int, float
     # Összetett - str, list
 
+# STRING MŰVELETEK
+
 # Indexálással kinyerhető egy karakter
 fruit = "cseresznye"
 print(fruit[2])
@@ -66,6 +68,30 @@ fruits = paragraph.split(",")
 #Stringek összefűzése
 print(f"A kedvenc gyümülcseim? {fruit}, ennyi van belöle: {len(fruit)}")
 
+# LISTA MŰVELETEK
+
+# Indexelés, szeletelés ugyan úgy müködik mint a str
+# Ciklus same
+# Hosszúság same
+# Lsita elem benne van-e - in fgv - !a típus különéget is nézi!
+
+# Lista bővítése
+names = ["jack", "jane"]
+names.append("xxx")
+print(names)
+
+# Listak összefűzése
+empty = []
+names = ["jack", "jane"]
+names2 = ["jack", "jane"]
+print(names + names2)
+
+# Lista elemek ismétlése
+print([1, 2] * 4)
+
+# Listaelemek törtlése
+del names[1]
+print(names)
 
 
 
