@@ -1,6 +1,10 @@
+from urllib.parse import urljoin
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
+@pytest.mark.fn_search    #markerek megadása
+@pytest.mark.basic
 def test_search_pep(driver: WebDriver, base_url): 
     driver.get(base_url)
     driver.find_element(By.ID, "id-search-field").send_keys("pep")
@@ -10,7 +14,7 @@ def test_search_pep(driver: WebDriver, base_url):
     assert "pep" in first_result.lower()
 
 def test_about(driver, base_url):
-    driver.get(base_url + "/about/")
+    driver.get(urljoin(base_url, "/about/"))
     
     title = driver.title
     assert "about" in title.lower()
