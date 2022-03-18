@@ -6,3 +6,5 @@
  # scripts / activate                   -> venv aktiválása
 
  #from selenium.webdriver.remote.webdriver import WebDriver -> driver. automatikus fv kiegészités
+
+ #https://mockaroo.com/

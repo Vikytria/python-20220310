@@ -13,6 +13,9 @@ class LocationsMainPage:
         return self
 
     def click_create_location_link(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located((By.ID, "create-location-link"))
+        )
         link = self.driver.find_element(By.ID, "create-location-link")
         link.click()
         return self
@@ -38,4 +41,6 @@ class LocationsMainPage:
         error_div = self.driver.find_element(By.CSS_SELECTOR, ".invalid-feedback:not([hidden='hidden'])")
         assert error_div.text == text
         return self
+    
+
     
